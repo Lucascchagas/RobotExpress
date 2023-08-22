@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230822 19:18:05.257" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Lucas\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${user}</var>
+<arg>name=Lucas Chagas</arg>
+<arg>email=chagas@hotmail.com</arg>
+<arg>password=pwd123</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20230822 19:18:05.795" level="INFO">${user} = {'name': 'Lucas Chagas', 'email': 'chagas@hotmail.com', 'password': 'pwd123'}</msg>
+<status status="PASS" starttime="20230822 19:18:05.795" endtime="20230822 19:18:05.795"/>
+</kw>
+<kw name="Remove user from database">
+<arg>${user}[email]</arg>
+<msg timestamp="20230822 19:18:05.796" level="FAIL">No keyword with name 'Remove user from database' found.</msg>
+<status status="FAIL" starttime="20230822 19:18:05.796" endtime="20230822 19:18:05.796"/>
+</kw>
+<kw name="Insert user from database">
+<arg>${user}</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.799" endtime="20230822 19:18:05.799"/>
+</kw>
+<kw name="Go To">
+<arg>${BASE_URL}/signup</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.800" endtime="20230822 19:18:05.800"/>
+</kw>
+<kw name="Wait For Elements State">
+<arg>css=h1</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.801" endtime="20230822 19:18:05.801"/>
+</kw>
+<kw name="Get Text">
+<arg>css=h1</arg>
+<arg>equal</arg>
+<arg>Faça seu cadastro</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.802" endtime="20230822 19:18:05.802"/>
+</kw>
+<kw name="Fill Text">
+<arg>css=#name</arg>
+<arg>${user}[name]</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.803" endtime="20230822 19:18:05.803"/>
+</kw>
+<kw name="Fill Text">
+<arg>css=#email</arg>
+<arg>${user}[email]</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.804" endtime="20230822 19:18:05.804"/>
+</kw>
+<kw name="Fill text">
+<arg>css=#password</arg>
+<arg>${user}[password]</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.805" endtime="20230822 19:18:05.805"/>
+</kw>
+<kw name="Click">
+<arg>id=buttonSignup</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.806" endtime="20230822 19:18:05.806"/>
+</kw>
+<kw name="Wait For Elements State">
+<arg>css=.notice p</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.807" endtime="20230822 19:18:05.807"/>
+</kw>
+<kw name="Get Text">
+<arg>css=.notice p</arg>
+<arg>equal</arg>
+<arg>Oops! Já existe uma conta com o e-mail informado.</arg>
+<status status="NOT RUN" starttime="20230822 19:18:05.807" endtime="20230822 19:18:05.807"/>
+</kw>
+<status status="PASS" starttime="20230822 19:18:05.275" endtime="20230822 19:18:06.925"/>
+</kw>
+<status status="PASS" starttime="20230822 19:18:05.275" endtime="20230822 19:18:06.925"/>
+</test>
+<status status="PASS" starttime="20230822 19:18:05.258" endtime="20230822 19:18:06.925"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
