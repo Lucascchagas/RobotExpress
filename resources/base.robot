@@ -3,8 +3,9 @@
 Library        libs/database.py
 Library        Browser
 
-*** Variables ***
-${BASE_URL}        http://localhost:3000        
+Resource       env.robot
+Resource       pages/SignupPage.robot
+      
 
 *** Keywords ***
 Start Session
