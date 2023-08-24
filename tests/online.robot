@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation
 
-Resource        ../resources/base.robot   
+Resource        ../resources/base.resource   
 
 *** Test Cases ***
 Example Test
