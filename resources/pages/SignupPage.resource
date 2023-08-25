@@ -20,3 +20,4 @@ Submit signup from
     Fill text    css=input[name=password]        ${user}[password]
 
     Click        css=button[type=submit] >> text=Cadastrar
+
